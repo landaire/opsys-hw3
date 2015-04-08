@@ -1,0 +1,96 @@
+Executing the syscalls binary:
+
+1507       0.000000 execve("./syscalls", ["./syscalls"], [/* 20 vars */]) = 0
+1507       0.001650 brk(0)              = 0x8ab7000
+
+do some memory mapping for the program to get it all set up, load some libraries, etc.
+
+1507       0.000576 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+1507       0.000319 mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7744000
+
+this access/open finds shared libraries that can be loaded pretty quickly, opens them, then reads it into this application's memory space
+1507       0.000343 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1507       0.000347 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1507       0.000338 fstat64(3, {st_mode=S_IFREG|0644, st_size=18572, ...}) = 0
+1507       0.000315 mmap2(NULL, 18572, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb773f000
+
+close the shared library cache
+1507       0.000276 close(3)            = 0
+1507       0.000351 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+
+need to get access to library functions somehow
+1507       0.000259 open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+
+read the shared libs into this application memory space
+1507       0.000249 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0000\226\1\0004\0\0\0"..., 512) = 512
+1507       0.000236 fstat64(3, {st_mode=S_IFREG|0755, st_size=1713640, ...}) = 0
+1507       0.000214 mmap2(NULL, 1723100, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb759a000
+1507       0.000189 mmap2(0xb7739000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19f) = 0xb7739000
+1507       0.000199 mmap2(0xb773c000, 10972, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb773c000
+
+close the libc library
+1507       0.000297 close(3)            = 0
+1507       0.000224 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7599000
+1507       0.000193 set_thread_area({entry_number:-1 -> 6, base_addr:0xb7599900, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+
+set read-only portions of memory
+
+1507       0.000246 mprotect(0xb7739000, 8192, PROT_READ) = 0
+1507       0.000193 mprotect(0x8049000, 4096, PROT_READ) = 0
+1507       0.000202 mprotect(0xb7767000, 4096, PROT_READ) = 0
+1507       0.000186 munmap(0xb773f000, 18572) = 0
+1507       0.000260 brk(0)              = 0x8ab7000
+1507       0.000185 brk(0x8ad8000)      = 0x8ad8000
+
+open the input file for read access, load data about it, etc.
+
+1507       0.000211 open("test.txt", O_RDONLY) = 3
+1507       0.000828 fstat64(3, {st_mode=S_IFREG|0755, st_size=194, ...}) = 0
+
+start reading the input file
+
+1507       0.000419 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7743000
+1507       0.000286 read(3, "b\r\nbabble\r\nbabe\r\nbabel\r\nbaboon\r\n"..., 4096) = 194
+1507       0.000403 fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+1507       0.000358 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7742000
+
+start writing the buffer to stdout. looks like many write calls are made because internally it detects the linefeed and flushes stdout
+
+1507       0.000236 write(1, "b\r\n", 3) = 3
+1507       0.000694 write(1, "babble\r\n", 8) = 8
+1507       0.000785 write(1, "babe\r\n", 6) = 6
+1507       0.000750 write(1, "babel\r\n", 7) = 7
+1507       0.000651 write(1, "baboon\r\n", 8) = 8
+1507       0.000565 write(1, "babushka\r\n", 10) = 10
+1507       0.000590 write(1, "baby\r\n", 6) = 6
+1507       0.000770 write(1, "baccalaureate\r\n", 15) = 15
+1507       0.000610 write(1, "bacchanalia\r\n", 13) = 13
+1507       0.000870 write(1, "bachelor\r\n", 10) = 10
+1507       0.000634 write(1, "bacillus\r\n", 10) = 10
+1507       0.000639 write(1, "back\r\n", 6) = 6
+1507       0.000944 write(1, "a\r\n", 3) = 3
+1507       0.000693 write(1, "aardvark\r\n", 10) = 10
+1507       0.000712 write(1, "aback\r\n", 7) = 7
+1507       0.000841 write(1, "abacus\r\n", 8) = 8
+1507       0.000573 write(1, "abaft\r\n", 7) = 7
+1507       0.000809 write(1, "abalone\r\n", 9) = 9
+1507       0.000772 write(1, "abandon\r\n", 9) = 9
+1507       0.000664 write(1, "abandoned\r\n", 11) = 11
+1507       0.000676 write(1, "abase\r\n", 7) = 7
+1507       0.000726 write(1, "abash\r\n", 7) = 7
+1507       0.000861 write(1, "abate\r\n", 7) = 7
+1507       0.000597 write(1, "azure\r\n", 7) = 7
+
+perform one last read/write since there was an error in my condition which caused it to still read at eof
+
+1507       0.000731 read(3, "", 4096)   = 0
+1507       0.000403 write(1, "azure\r\n", 7) = 7
+
+close the input file
+
+1507       0.000801 close(3)            = 0
+
+clean up allocated memory and exit the application
+
+1507       0.000466 munmap(0xb7743000, 4096) = 0
+1507       0.000311 exit_group(0)       = ?

@@ -1,0 +1,293 @@
+4589       0.000000 execve("/bin/ls", ["ls", "-al"], [/* 22 vars */]) = 0
+4589       0.000439 brk(0)              = 0x92a5000
+4589       0.000309 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000394 mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb775b000
+4589       0.000342 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+4589       0.000344 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000363 fstat64(3, {st_mode=S_IFREG|0644, st_size=23476, ...}) = 0
+4589       0.000375 mmap2(NULL, 23476, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb7755000
+4589       0.000357 close(3)            = 0
+4589       0.000360 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000370 open("/lib/i386-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000443 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0@A\0\0004\0\0\0"..., 512) = 512
+4589       0.000411 fstat64(3, {st_mode=S_IFREG|0644, st_size=120748, ...}) = 0
+4589       0.000321 mmap2(NULL, 125852, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7736000
+4589       0.000308 mmap2(0xb7753000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c) = 0xb7753000
+4589       0.000405 close(3)            = 0
+4589       0.000310 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000321 open("/lib/i386-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000317 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\320\30\0\0004\0\0\0"..., 512) = 512
+4589       0.000298 fstat64(3, {st_mode=S_IFREG|0644, st_size=30684, ...}) = 0
+4589       0.000227 mmap2(NULL, 33360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb772d000
+4589       0.000215 mmap2(0xb7734000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6) = 0xb7734000
+4589       0.000225 close(3)            = 0
+4589       0.000214 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000240 open("/lib/i386-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000199 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\200\24\0\0004\0\0\0"..., 512) = 512
+4589       0.000203 fstat64(3, {st_mode=S_IFREG|0644, st_size=30300, ...}) = 0
+4589       0.000194 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb772c000
+4589       0.000190 mmap2(NULL, 33088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7723000
+4589       0.000191 mmap2(0xb772a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6) = 0xb772a000
+4589       0.000329 close(3)            = 0
+4589       0.000295 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000362 open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000421 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0000\226\1\0004\0\0\0"..., 512) = 512
+4589       0.000424 fstat64(3, {st_mode=S_IFREG|0755, st_size=1713640, ...}) = 0
+4589       0.000270 mmap2(NULL, 1723100, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb757e000
+4589       0.000220 mmap2(0xb771d000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19f) = 0xb771d000
+4589       0.000242 mmap2(0xb7720000, 10972, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb7720000
+4589       0.000242 close(3)            = 0
+4589       0.000253 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000280 open("/lib/i386-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000314 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0`\n\0\0004\0\0\0"..., 512) = 512
+4589       0.000275 fstat64(3, {st_mode=S_IFREG|0644, st_size=13940, ...}) = 0
+4589       0.000303 mmap2(NULL, 16504, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7579000
+4589       0.000372 mmap2(0xb757c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2) = 0xb757c000
+4589       0.000510 close(3)            = 0
+4589       0.000296 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000246 open("/lib/i386-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000297 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0p[\0\0004\0\0\0"..., 512) = 512
+4589       0.000393 fstat64(3, {st_mode=S_IFREG|0755, st_size=124663, ...}) = 0
+4589       0.000211 mmap2(NULL, 107008, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb755e000
+4589       0.000685 mmap2(0xb7575000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16) = 0xb7575000
+4589       0.000384 mmap2(0xb7577000, 4608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb7577000
+4589       0.000456 close(3)            = 0
+4589       0.000426 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000442 open("/lib/i386-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000426 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0@\f\0\0004\0\0\0"..., 512) = 512
+4589       0.000492 fstat64(3, {st_mode=S_IFREG|0644, st_size=17816, ...}) = 0
+4589       0.000432 mmap2(NULL, 20584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7558000
+4589       0.001761 mmap2(0xb755c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3) = 0xb755c000
+4589       0.000567 close(3)            = 0
+4589       0.000511 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7557000
+4589       0.000522 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7556000
+4589       0.000372 set_thread_area({entry_number:-1 -> 6, base_addr:0xb7556740, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+4589       0.000467 mprotect(0xb771d000, 8192, PROT_READ) = 0
+4589       0.000377 mprotect(0xb755c000, 4096, PROT_READ) = 0
+4589       0.000368 mprotect(0xb7575000, 4096, PROT_READ) = 0
+4589       0.000403 mprotect(0xb757c000, 4096, PROT_READ) = 0
+4589       0.000339 mprotect(0xb772a000, 4096, PROT_READ) = 0
+4589       0.000333 mprotect(0xb7734000, 4096, PROT_READ) = 0
+4589       0.000384 mprotect(0xb7753000, 4096, PROT_READ) = 0
+4589       0.000316 mprotect(0x8061000, 4096, PROT_READ) = 0
+4589       0.000327 mprotect(0xb777e000, 4096, PROT_READ) = 0
+4589       0.000465 munmap(0xb7755000, 23476) = 0
+4589       0.000353 set_tid_address(0xb75567a8) = 4589
+4589       0.000323 set_robust_list(0xb75567b0, 0xc) = 0
+4589       0.000323 futex(0xbf932a74, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, b7556740) = -1 EAGAIN (Resource temporarily unavailable)
+4589       0.000401 rt_sigaction(SIGRTMIN, {0xb7563570, [], SA_SIGINFO}, NULL, 8) = 0
+4589       0.000382 rt_sigaction(SIGRT_1, {0xb75635f0, [], SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4589       0.000363 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+4589       0.000367 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+4589       0.000385 uname({sys="Linux", node="precise32", ...}) = 0
+4589       0.000499 statfs64("/selinux", 84, {f_type="EXT2_SUPER_MAGIC", f_bsize=4096, f_blocks=20677803, f_bfree=20054082, f_bavail=19018511, f_files=5185536, f_ffree=5141781, f_fsid={-1945794677, 1271929582}, f_namelen=255, f_frsize=4096}) = 0
+4589       0.000429 brk(0)              = 0x92a5000
+4589       0.000366 brk(0x92c6000)      = 0x92c6000
+4589       0.000363 open("/proc/filesystems", O_RDONLY|O_LARGEFILE) = 3
+4589       0.000413 fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4589       0.000384 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb775a000
+4589       0.000373 read(3, "nodev\tsysfs\nnodev\trootfs\nnodev\tb"..., 1024) = 372
+4589       0.000432 read(3, "", 1024)   = 0
+4589       0.000380 close(3)            = 0
+4589       0.000377 munmap(0xb775a000, 4096) = 0
+4589       0.000484 open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+4589       0.000365 fstat64(3, {st_mode=S_IFREG|0644, st_size=3164592, ...}) = 0
+4589       0.000391 mmap2(NULL, 2097152, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb7356000
+4589       0.000347 mmap2(NULL, 249856, PROT_READ, MAP_PRIVATE, 3, 0x2c8) = 0xb7319000
+4589       0.000338 close(3)            = 0
+4589       0.000393 ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+4589       0.001231 ioctl(1, TIOCGWINSZ, {ws_row=51, ws_col=90, ws_xpixel=0, ws_ypixel=0}) = 0
+4589       0.000492 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000455 fstat64(3, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+4589       0.000433 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7318000
+4589       0.000406 read(3, "# Locale name alias data base.\n#"..., 4096) = 2570
+4589       0.000422 read(3, "", 4096)   = 0
+4589       0.000369 close(3)            = 0
+4589       0.000363 munmap(0xb7318000, 4096) = 0
+4589       0.000513 open("/usr/share/locale/en_US/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000494 open("/usr/share/locale/en/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000329 open("/usr/share/locale-langpack/en_US/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000369 open("/usr/share/locale-langpack/en/LC_TIME/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000413 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = 3
+4589       0.001392 getdents64(3, /* 16 entries */, 32768) = 528
+4589       0.000311 lstat64(".", {st_mode=S_IFDIR|0755, st_size=544, ...}) = 0
+4589       0.000464 lgetxattr(".", "security.selinux", 0x92b1808, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000239 lgetxattr(".", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000249 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+4589       0.000231 connect(4, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+4589       0.000251 close(4)            = 0
+4589       0.000252 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+4589       0.000214 connect(4, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+4589       0.000251 close(4)            = 0
+4589       0.000217 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000393 fstat64(4, {st_mode=S_IFREG|0644, st_size=475, ...}) = 0
+4589       0.000250 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7318000
+4589       0.000233 read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 475
+4589       0.000244 read(4, "", 4096)   = 0
+4589       0.000214 close(4)            = 0
+4589       0.000229 munmap(0xb7318000, 4096) = 0
+4589       0.000277 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000250 fstat64(4, {st_mode=S_IFREG|0644, st_size=23476, ...}) = 0
+4589       0.000236 mmap2(NULL, 23476, PROT_READ, MAP_PRIVATE, 4, 0) = 0xb7313000
+4589       0.000259 close(4)            = 0
+4589       0.000227 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000243 open("/lib/i386-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000224 read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\300\r\0\0004\0\0\0"..., 512) = 512
+4589       0.000244 fstat64(4, {st_mode=S_IFREG|0644, st_size=30520, ...}) = 0
+4589       0.000223 mmap2(NULL, 33328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb730a000
+4589       0.000229 mmap2(0xb7311000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6) = 0xb7311000
+4589       0.000227 close(4)            = 0
+4589       0.000217 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000220 open("/lib/i386-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000219 read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0`1\0\0004\0\0\0"..., 512) = 512
+4589       0.000267 fstat64(4, {st_mode=S_IFREG|0644, st_size=92016, ...}) = 0
+4589       0.000262 mmap2(NULL, 104424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb72f0000
+4589       0.000238 mmap2(0xb7306000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x15) = 0xb7306000
+4589       0.000250 mmap2(0xb7308000, 6120, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb7308000
+4589       0.000233 close(4)            = 0
+4589       0.000250 mprotect(0xb7306000, 4096, PROT_READ) = 0
+4589       0.000242 mprotect(0xb7311000, 4096, PROT_READ) = 0
+4589       0.000249 munmap(0xb7313000, 23476) = 0
+4589       0.000298 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000316 fstat64(4, {st_mode=S_IFREG|0644, st_size=23476, ...}) = 0
+4589       0.000377 mmap2(NULL, 23476, PROT_READ, MAP_PRIVATE, 4, 0) = 0xb7755000
+4589       0.000508 close(4)            = 0
+4589       0.000664 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000842 open("/lib/i386-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000375 read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0p\31\0\0004\0\0\0"..., 512) = 512
+4589       0.000352 fstat64(4, {st_mode=S_IFREG|0644, st_size=42652, ...}) = 0
+4589       0.000616 mmap2(NULL, 45628, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb72e4000
+4589       0.000512 mmap2(0xb72ee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x9) = 0xb72ee000
+4589       0.000523 close(4)            = 0
+4589       0.000356 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+4589       0.000455 open("/lib/i386-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000610 read(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\20\32\0\0004\0\0\0"..., 512) = 512
+4589       0.000379 fstat64(4, {st_mode=S_IFREG|0644, st_size=47040, ...}) = 0
+4589       0.000485 mmap2(NULL, 50180, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0xb72d7000
+4589       0.000490 mmap2(0xb72e2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa) = 0xb72e2000
+4589       0.000413 close(4)            = 0
+4589       0.000384 mprotect(0xb72e2000, 4096, PROT_READ) = 0
+4589       0.000495 mprotect(0xb72ee000, 4096, PROT_READ) = 0
+4589       0.000389 munmap(0xb7755000, 23476) = 0
+4589       0.000346 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000483 _llseek(4, 0, [0], SEEK_CUR) = 0
+4589       0.000452 fstat64(4, {st_mode=S_IFREG|0644, st_size=1079, ...}) = 0
+4589       0.000385 mmap2(NULL, 1079, PROT_READ, MAP_SHARED, 4, 0) = 0xb775a000
+4589       0.000355 _llseek(4, 1079, [1079], SEEK_SET) = 0
+4589       0.000369 munmap(0xb775a000, 1079) = 0
+4589       0.000212 close(4)            = 0
+4589       0.000726 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+4589       0.000270 connect(4, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+4589       0.000274 close(4)            = 0
+4589       0.000242 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+4589       0.000316 connect(4, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+4589       0.000254 close(4)            = 0
+4589       0.000228 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+4589       0.000208 _llseek(4, 0, [0], SEEK_CUR) = 0
+4589       0.000195 fstat64(4, {st_mode=S_IFREG|0644, st_size=705, ...}) = 0
+4589       0.000282 mmap2(NULL, 705, PROT_READ, MAP_SHARED, 4, 0) = 0xb775a000
+4589       0.000247 _llseek(4, 705, [705], SEEK_SET) = 0
+4589       0.000280 munmap(0xb775a000, 705) = 0
+4589       0.000254 close(4)            = 0
+4589       0.000259 lstat64("..", {st_mode=S_IFDIR|0755, st_size=272, ...}) = 0
+4589       0.000417 lgetxattr("..", "security.selinux", 0x92b3540, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000286 lgetxattr("..", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000297 lstat64(".idea", {st_mode=S_IFDIR|0755, st_size=272, ...}) = 0
+4589       0.000650 lgetxattr(".idea", "security.selinux", 0x92b3550, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000518 lgetxattr(".idea", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000529 lstat64("CMakeLists.txt", {st_mode=S_IFREG|0644, st_size=169, ...}) = 0
+4589       0.000685 lgetxattr("CMakeLists.txt", "security.selinux", 0x92b3560, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000596 lgetxattr("CMakeLists.txt", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000523 lstat64("java", {st_mode=S_IFDIR|0755, st_size=204, ...}) = 0
+4589       0.000694 lgetxattr("java", "security.selinux", 0x92b3578, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000456 lgetxattr("java", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000611 lstat64("lsout.txt", {st_mode=S_IFREG|0644, st_size=17395, ...}) = 0
+4589       0.000508 lgetxattr("lsout.txt", "security.selinux", 0x92b3588, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000434 lgetxattr("lsout.txt", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000457 lstat64("Makefile", {st_mode=S_IFREG|0644, st_size=140, ...}) = 0
+4589       0.000574 lgetxattr("Makefile", "security.selinux", 0x92b3598, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000467 lgetxattr("Makefile", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000492 lstat64("syscallout.txt", {st_mode=S_IFREG|0644, st_size=4952, ...}) = 0
+4589       0.000730 lgetxattr("syscallout.txt", "security.selinux", 0x92b35a8, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000414 lgetxattr("syscallout.txt", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000429 lstat64("syscallout2.txt", {st_mode=S_IFREG|0644, st_size=950, ...}) = 0
+4589       0.000586 lgetxattr("syscallout2.txt", "security.selinux", 0x92b35c0, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000471 lgetxattr("syscallout2.txt", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000482 lstat64("syscalloutjava.txt", {st_mode=S_IFREG|0644, st_size=682247, ...}) = 0
+4589       0.000653 lgetxattr("syscalloutjava.txt", "security.selinux", 0x92b35d8, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000586 lgetxattr("syscalloutjava.txt", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000538 lstat64("syscalls", {st_mode=S_IFREG|0755, st_size=7398, ...}) = 0
+4589       0.000636 lgetxattr("syscalls", "security.selinux", 0x92b35f0, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000422 lgetxattr("syscalls", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000428 lstat64("syscalls.c", {st_mode=S_IFREG|0644, st_size=422, ...}) = 0
+4589       0.000868 lgetxattr("syscalls.c", "security.selinux", 0x92b3600, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000436 lgetxattr("syscalls.c", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000428 lstat64("SysCalls.class", {st_mode=S_IFREG|0644, st_size=868, ...}) = 0
+4589       0.000638 lgetxattr("SysCalls.class", "security.selinux", 0x92b3610, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000487 lgetxattr("SysCalls.class", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000473 lstat64("syscalls.h", {st_mode=S_IFREG|0644, st_size=117, ...}) = 0
+4589       0.000497 lgetxattr("syscalls.h", "security.selinux", 0x92b3628, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000468 lgetxattr("syscalls.h", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000443 lstat64("syscalls.o", {st_mode=S_IFREG|0644, st_size=1436, ...}) = 0
+4589       0.000716 lgetxattr("syscalls.o", "security.selinux", 0x92b3638, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000417 lgetxattr("syscalls.o", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000411 lstat64("test.txt", {st_mode=S_IFREG|0755, st_size=194, ...}) = 0
+4589       0.000532 lgetxattr("test.txt", "security.selinux", 0x92b3648, 255) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000379 lgetxattr("test.txt", "system.posix_acl_access", 0x0, 0) = -1 EOPNOTSUPP (Operation not supported)
+4589       0.000374 getdents64(3, /* 0 entries */, 32768) = 0
+4589       0.000247 close(3)            = 0
+4589       0.000448 open("/usr/share/locale/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000296 open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000315 open("/usr/share/locale-langpack/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+4589       0.000328 open("/usr/share/locale-langpack/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = 3
+4589       0.000318 fstat64(3, {st_mode=S_IFREG|0644, st_size=619, ...}) = 0
+4589       0.000326 mmap2(NULL, 619, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb775a000
+4589       0.000360 close(3)            = 0
+4589       0.000371 fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0
+4589       0.000294 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7759000
+4589       0.000525 write(1, "total 736\n", 10) = 10
+4589       0.001599 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+4589       0.000324 fstat64(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000272 fstat64(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000242 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7758000
+4589       0.000276 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 118
+4589       0.000263 _llseek(3, -6, [112], SEEK_CUR) = 0
+4589       0.000234 read(3, "\nUTC0\n", 4096) = 6
+4589       0.000383 close(3)            = 0
+4589       0.000270 munmap(0xb7758000, 4096) = 0
+4589       0.000298 clock_gettime(CLOCK_REALTIME, {1428454735, 486150288}) = 0
+4589       0.000336 write(1, "drwxr-xr-x 1 vagrant vagrant    "..., 51) = 51
+4589       0.001382 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000289 write(1, "drwxr-xr-x 1 vagrant vagrant    "..., 52) = 52
+4589       0.001406 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000376 write(1, "-rw-r--r-- 1 vagrant vagrant    "..., 64) = 64
+4589       0.001658 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000348 write(1, "drwxr-xr-x 1 vagrant vagrant    "..., 55) = 55
+4589       0.001336 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000325 write(1, "drwxr-xr-x 1 vagrant vagrant    "..., 54) = 54
+4589       0.001533 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000366 write(1, "-rw-r--r-- 1 vagrant vagrant  17"..., 59) = 59
+4589       0.001415 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000312 write(1, "-rw-r--r-- 1 vagrant vagrant    "..., 58) = 58
+4589       0.001275 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000329 write(1, "-rw-r--r-- 1 vagrant vagrant    "..., 65) = 65
+4589       0.001485 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000301 write(1, "-rw-r--r-- 1 vagrant vagrant 682"..., 68) = 68
+4589       0.001214 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000412 write(1, "-rw-r--r-- 1 vagrant vagrant   4"..., 64) = 64
+4589       0.001649 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000324 write(1, "-rwxr-xr-x 1 vagrant vagrant   7"..., 58) = 58
+4589       0.001375 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000379 write(1, "-rw-r--r-- 1 vagrant vagrant    "..., 60) = 60
+4589       0.001451 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000340 write(1, "-rw-r--r-- 1 vagrant vagrant    "..., 64) = 64
+4589       0.001437 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000330 write(1, "-rw-r--r-- 1 vagrant vagrant    "..., 60) = 60
+4589       0.002190 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000323 write(1, "-rw-r--r-- 1 vagrant vagrant   1"..., 60) = 60
+4589       0.001468 stat64("/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+4589       0.000313 write(1, "-rwxr-xr-x 1 vagrant vagrant    "..., 58) = 58
+4589       0.001406 close(1)            = 0
+4589       0.000283 munmap(0xb7759000, 4096) = 0
+4589       0.000252 close(2)            = 0
+4589       0.000361 exit_group(0)       = ?

@@ -1,0 +1,16 @@
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+  -nan    0.000000           0         3           read
+  -nan    0.000000           0        24           write
+  -nan    0.000000           0         3           open
+  -nan    0.000000           0         3           close
+  -nan    0.000000           0         1           execve
+  -nan    0.000000           0         3         3 access
+  -nan    0.000000           0         3           brk
+  -nan    0.000000           0         2           munmap
+  -nan    0.000000           0         3           mprotect
+  -nan    0.000000           0         8           mmap2
+  -nan    0.000000           0         4           fstat64
+  -nan    0.000000           0         1           set_thread_area
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000000                    58         3 total

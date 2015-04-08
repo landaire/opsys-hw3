@@ -1,0 +1,117 @@
+5305       0.000000 execve("./myls", ["./myls", "-l", "test.txt"], [/* 22 vars */]) = 0
+5305       0.001388 brk(0)              = 0x9673000
+5305       0.000547 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+5305       0.000286 mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb76e2000
+5305       0.000322 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+5305       0.000296 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000320 fstat64(3, {st_mode=S_IFREG|0644, st_size=23549, ...}) = 0
+5305       0.000396 mmap2(NULL, 23549, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb76dc000
+5305       0.000333 close(3)            = 0
+5305       0.000268 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+5305       0.000250 open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000247 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0000\226\1\0004\0\0\0"..., 512) = 512
+5305       0.000237 fstat64(3, {st_mode=S_IFREG|0755, st_size=1713640, ...}) = 0
+5305       0.000247 mmap2(NULL, 1723100, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7537000
+5305       0.000190 mmap2(0xb76d6000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19f) = 0xb76d6000
+5305       0.000198 mmap2(0xb76d9000, 10972, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb76d9000
+5305       0.000196 close(3)            = 0
+5305       0.000195 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7536000
+5305       0.000191 set_thread_area({entry_number:-1 -> 6, base_addr:0xb7536900, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+5305       0.000243 mprotect(0xb76d6000, 8192, PROT_READ) = 0
+5305       0.000193 mprotect(0x8049000, 4096, PROT_READ) = 0
+5305       0.000190 mprotect(0xb7705000, 4096, PROT_READ) = 0
+5305       0.000186 munmap(0xb76dc000, 23549) = 0
+5305       0.000228 openat(AT_FDCWD, "test.txt", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_CLOEXEC) = -1 ENOTDIR (Not a directory)
+5305       0.000318 access("test.txt", F_OK) = 0
+5305       0.000306 lstat64("test.txt", {st_mode=S_IFREG|0755, st_size=194, ...}) = 0
+5305       0.000447 brk(0)              = 0x9673000
+5305       0.000185 brk(0x9694000)      = 0x9694000
+5305       0.000400 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+5305       0.000221 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+5305       0.000328 close(3)            = 0
+5305       0.000243 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+5305       0.000312 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+5305       0.000266 close(3)            = 0
+5305       0.000248 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000244 fstat64(3, {st_mode=S_IFREG|0644, st_size=475, ...}) = 0
+5305       0.000260 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb76e1000
+5305       0.000414 read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 475
+5305       0.000334 read(3, "", 4096)   = 0
+5305       0.000339 close(3)            = 0
+5305       0.000306 munmap(0xb76e1000, 4096) = 0
+5305       0.000356 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000380 fstat64(3, {st_mode=S_IFREG|0644, st_size=23549, ...}) = 0
+5305       0.000155 mmap2(NULL, 23549, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb76dc000
+5305       0.000693 close(3)            = 0
+5305       0.000287 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+5305       0.000251 open("/lib/i386-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000257 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\300\r\0\0004\0\0\0"..., 512) = 512
+5305       0.000260 fstat64(3, {st_mode=S_IFREG|0644, st_size=30520, ...}) = 0
+5305       0.000270 mmap2(NULL, 33328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb752d000
+5305       0.000284 mmap2(0xb7534000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6) = 0xb7534000
+5305       0.000286 close(3)            = 0
+5305       0.000251 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+5305       0.000258 open("/lib/i386-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000262 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0`1\0\0004\0\0\0"..., 512) = 512
+5305       0.000329 fstat64(3, {st_mode=S_IFREG|0644, st_size=92016, ...}) = 0
+5305       0.000376 mmap2(NULL, 104424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7513000
+5305       0.000305 mmap2(0xb7529000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15) = 0xb7529000
+5305       0.000369 mmap2(0xb752b000, 6120, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb752b000
+5305       0.000449 close(3)            = 0
+5305       0.000615 mprotect(0xb7529000, 4096, PROT_READ) = 0
+5305       0.000361 mprotect(0xb7534000, 4096, PROT_READ) = 0
+5305       0.000334 munmap(0xb76dc000, 23549) = 0
+5305       0.000444 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000357 fstat64(3, {st_mode=S_IFREG|0644, st_size=23549, ...}) = 0
+5305       0.000345 mmap2(NULL, 23549, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb76dc000
+5305       0.000366 close(3)            = 0
+5305       0.000343 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+5305       0.000385 open("/lib/i386-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000336 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0p\31\0\0004\0\0\0"..., 512) = 512
+5305       0.000353 fstat64(3, {st_mode=S_IFREG|0644, st_size=42652, ...}) = 0
+5305       0.000393 mmap2(NULL, 45628, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7507000
+5305       0.000316 mmap2(0xb7511000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9) = 0xb7511000
+5305       0.000364 close(3)            = 0
+5305       0.000582 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+5305       0.000338 open("/lib/i386-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000381 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\20\32\0\0004\0\0\0"..., 512) = 512
+5305       0.000376 fstat64(3, {st_mode=S_IFREG|0644, st_size=47040, ...}) = 0
+5305       0.000359 mmap2(NULL, 50180, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb74fa000
+5305       0.000345 mmap2(0xb7505000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa) = 0xb7505000
+5305       0.000366 close(3)            = 0
+5305       0.000419 mprotect(0xb7505000, 4096, PROT_READ) = 0
+5305       0.000309 mprotect(0xb7511000, 4096, PROT_READ) = 0
+5305       0.000289 munmap(0xb76dc000, 23549) = 0
+5305       0.000304 open("/etc/group", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000304 _llseek(3, 0, [0], SEEK_CUR) = 0
+5305       0.000335 fstat64(3, {st_mode=S_IFREG|0644, st_size=705, ...}) = 0
+5305       0.000376 mmap2(NULL, 705, PROT_READ, MAP_SHARED, 3, 0) = 0xb76e1000
+5305       0.000237 _llseek(3, 705, [705], SEEK_SET) = 0
+5305       0.000331 munmap(0xb76e1000, 705) = 0
+5305       0.000285 close(3)            = 0
+5305       0.000281 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+5305       0.000278 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+5305       0.000267 close(3)            = 0
+5305       0.000316 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+5305       0.000272 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+5305       0.000243 close(3)            = 0
+5305       0.000229 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000325 _llseek(3, 0, [0], SEEK_CUR) = 0
+5305       0.000239 fstat64(3, {st_mode=S_IFREG|0644, st_size=1079, ...}) = 0
+5305       0.000241 mmap2(NULL, 1079, PROT_READ, MAP_SHARED, 3, 0) = 0xb76e1000
+5305       0.000234 _llseek(3, 1079, [1079], SEEK_SET) = 0
+5305       0.000273 munmap(0xb76e1000, 1079) = 0
+5305       0.000366 close(3)            = 0
+5305       0.000254 fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0
+5305       0.000312 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb76e1000
+5305       0.000266 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+5305       0.000266 fstat64(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+5305       0.000303 fstat64(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+5305       0.000285 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb76e0000
+5305       0.000249 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 118
+5305       0.000277 _llseek(3, -6, [112], SEEK_CUR) = 0
+5305       0.000378 read(3, "\nUTC0\n", 4096) = 6
+5305       0.000305 close(3)            = 0
+5305       0.000291 munmap(0xb76e0000, 4096) = 0
+5305       0.000319 write(1, "-rwxr-wr-x    1  vagrant vagrant"..., 80) = 80
+5305       0.002805 exit_group(0)       = ?
